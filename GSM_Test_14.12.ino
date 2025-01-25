@@ -29,7 +29,7 @@ void setup()
   mySerial.println("AT"); // Handshake test, should return "OK" on success
   updateSerial();
   delay(1000);
-  mySerial.println("AT+CSQ"); // Signal quality test, value range is 0-31, 31 is the best
+  mySerial.println("AT+CSQ"); // Signal quality test, value range is 0-31, 31 is the best.
   updateSerial();
   delay(1000);
   mySerial.println("AT+CCID"); // Read SIM information to confirm whether the SIM is inserted
@@ -44,7 +44,7 @@ void setup()
   mySerial.println("AT+CMGS=\"+918698660302\""); // Change ZZ with the country code and xxxxxxxxxxx with the phone number to send an SMS to
   updateSerial();
   delay(1000);
-  mySerial.print("hi"); // Change ZZ with the country code and xxxxxxxxxxx with the phone number to send an SMS to
+  mySerial.print("hi"); // Change ZZ with the country code and xxxxxxxxxxx with the phone number to send an SMS to.
   updateSerial();
   delay(1000);
   mySerial.write(26); 
