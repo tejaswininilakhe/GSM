@@ -49,7 +49,7 @@ void setup()
   delay(1000);
   mySerial.write(26); 
   delay(2000);
-  mySerial.println("AT+CNMI=2,2,0,0,0");
+  mySerial.println("AT+CNMI=2,2,0,0,0"); // command to receive the SMS
   updateSerial();
   delay(2000);
    mySerial.println("AT+CNMI=2,2,0,0,0");
